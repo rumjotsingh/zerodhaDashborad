@@ -4,8 +4,8 @@ import axios, { all } from "axios";
 const Positions = () => {
   const [allPositions, setallPositions] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:8080/api/v1/users/allPositions").then((res) => {
-      console.log(res.data);
+    axios.get("https://zerodhabackend-x5bh.onrender.com/api/v1/users/allPositions").then((res) => {
+    
       setallPositions(res.data);
     });
   }, []);
